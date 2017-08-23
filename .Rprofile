@@ -1,1 +1,0 @@
-options(ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"])
