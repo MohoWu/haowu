@@ -1,5 +1,5 @@
 theme = "hyde"
-baseURL = "http://example.org/"
+baseURL = "http://www.haowu.com"
 languageCode = "en-us"
 title = "My New Hugo Site"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
