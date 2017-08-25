@@ -1,5 +1,5 @@
 theme = "hyde"
-baseURL = "http://cashier-zebra-77543.netlify.com/"
+baseURL = "https://haowu.netlify.com/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
