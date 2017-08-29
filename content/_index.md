@@ -1,7 +1,6 @@
 ---
 title: Homepage
 date: '2017-08-29'
-showthedate: false
 ---
 
 I'm a data science specialist working at [Ricardo Energy & Environment](https://ee.ricardo.com/).

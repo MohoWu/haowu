@@ -1,6 +1,7 @@
 ---
 title: 'Curriculum Vitae - Hao Wu'
 date: "2017-08-29"
+enablecomments: false
 ---
 
 ### Personal summary

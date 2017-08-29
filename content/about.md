@@ -2,6 +2,7 @@
 title: "About"
 slug: "about"
 showthedate: false
+enablecomments: false
 ---
 
 My name is Hao Wu (武昊). You can know more about me on my [vitae](/vitae/). This blog is about data science, R, fun stuffs and photography.
