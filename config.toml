@@ -4,10 +4,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 languageCode = "en-us"
 enableEmoji = true
 
-title = "Hao Wu"
+title = "Hao"
 
 [params]
-  themeColor = "theme-base-09"
   disqusShortname = "haowu"
   description = "Welcome to my website."
 
