@@ -8,9 +8,8 @@ title = "Hao Wu"
 
 [params]
   themeColor = "theme-base-09"
-  disqusShortname = "mohowu"
+  disqusShortname = "haowu"
   description = "Welcome to my website."
-
 
 [[menu.main]]
   name = "Blog"
