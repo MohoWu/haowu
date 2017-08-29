@@ -1,5 +1,36 @@
 theme = "hyde"
 baseURL = "https://haowu.netlify.com/"
-languageCode = "en-us"
-title = "My New Hugo Site"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+languageCode = "en-us"
+enableEmoji = true
+
+title = "Hao Wu"
+
+[params]
+  themeColor = "theme-base-09"
+  disqusShortname = "mohowu"
+  description = "Welcome to my website."
+
+
+[[menu.main]]
+  name = "Blog"
+  url = "/post/"
+  weight = 1
+[[menu.main]]
+  name = "GitHub"
+  url = "https://github.com/mohowu"
+  weight = 2
+[[menu.main]]
+  name = "Twitter"
+  url = "https://twitter.com/WuMoho"
+  weight = 3
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 4
+[[menu.main]]
+  name = "CV"
+  url = "/vitae/"
+  weight = 5
+
+  
