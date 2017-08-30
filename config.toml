@@ -3,6 +3,7 @@ baseURL = "https://haowu.netlify.com/"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 languageCode = "en-us"
 enableEmoji = true
+googleAnalytics = "UA-105636148-1"
 
 title = "Hao"
 
