@@ -1,0 +1,17 @@
+{{ range .Data.Pages }}
+    <article>
+      <!-- this <div> includes the title summary -->
+      <div>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2> 
+        <em><time class="pull-left post-list">{{ .Date.Format "Mon, 2 Jan, 2006" }}</time></em>
+        <br/>
+        {{ .Summary }}
+      </div>
+      {{ if .Truncated }}
+      <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+      <div>
+        <a href="{{ .RelPermalink }}">Read More…</a>
+      </div>
+      {{ end }}
+    </article>
+{{ end }}
