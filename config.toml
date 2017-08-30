@@ -10,6 +10,7 @@ title = "Hao"
 [params]
   disqusShortname = "haowu"
   description = "Welcome to my website."
+  copyright = "&copy; [Hao Wu](https://haowu.netlify.com) 2017"
 
 [[menu.main]]
   name = "Blog"
