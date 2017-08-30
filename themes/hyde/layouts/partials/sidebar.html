@@ -2,8 +2,9 @@
   <div class="container">
     <div class="sidebar-about">
       <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+      {{with .Site.Params.mainImage}}<img src="{{.}}" width=50% />{{end}}
       <p class="lead">
-      {{ with .Site.Params.description }} {{.}} {{ else }}An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.{{end}}
+        {{ with .Site.Params.description }} {{.}} {{ else }}An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.{{end}}
       </p>
     </div>
 
@@ -12,6 +13,12 @@
         <li><a href="{{.URL}}"> {{ .Name }} </a></li>
       {{end}}
     </ul>
+    
+    {{ with .Site.Params.github }} <a href="{{.}}"><i class="fa fa-github-square fa-3x"></i></a>&nbsp;&nbsp;{{end}}
+    {{ with .Site.Params.twitter }}<a href="{{.}}"><i class="fa fa-twitter-square fa-3x"></i></a>&nbsp;&nbsp;{{end}} 
+    {{ with .Site.Params.facebook }}<a href="{{.}}"><i class="fa fa-facebook-square fa-3x"></i></a>&nbsp;&nbsp;{{end}}
+    {{ with .Site.Params.linkedin}}<a href="{{.}}"><i class="fa fa-linkedin-square fa-3x"></i></a>&nbsp;&nbsp;{{end}}
+    {{ with .Site.Params.gplus }}<a href="{{.}}"><i class="fa fa-google-plus fa-3x"></i></a>{{end}}
 
     <p>
       {{ with .Site.Params.copyright }}

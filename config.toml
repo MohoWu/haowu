@@ -10,7 +10,16 @@ title = "Hao"
 [params]
   disqusShortname = "haowu"
   description = "Welcome to my website."
-  copyright = "&copy; [Hao Wu](https://haowu.netlify.com) 2017"
+  twitter = "https://twitter.com/WuMoho"
+  github = "https://github.com/mohowu"
+  copyright = "Powered by [Hugo](http://gohugo.io) <br/> &copy; 2017 [Hao Wu](https://haowu.netlify.com). All rights reserved."
+  
+
+[Taxonomies]
+	tag = "tags"
+	series = "series"
+	series-desc = "series-desc"
+	category = "categories"
 
 [[menu.main]]
   name = "Blog"
@@ -25,12 +34,12 @@ title = "Hao"
   url = "/vitae/"
   weight = 3
 [[menu.main]]
-  name = "GitHub"
-  url = "https://github.com/mohowu"
+  name = "Categories"
+  url = "/categories/"
   weight = 4
 [[menu.main]]
-  name = "Twitter"
-  url = "https://twitter.com/WuMoho"
+  name = "Tags"
+  url = "/tags/"
   weight = 5
 
 
