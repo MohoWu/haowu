@@ -1,15 +1,15 @@
 ---
 title: "Curriculum Vitae - Hao Wu"
 enablecomments: false
-bibliography: ./myfiles/vitae.bib
-csl: ./myfiles/elsevier-harvard-with-url.csl
+bibliography: ../static/bib/vitae.bib
+csl: ../static/bib/elsevier-harvard-with-url.csl
 nocite: |
   @wu2017, @kenagy2016, @wu2015, @steinle2015, @reis2014
 ---
 
 ### Education 
 
-* __Ph.D.__   Urban air quality and human exposure assessment ([*Thesis*](/myfiles/PhDThesis_HW_final.pdf)), University of Edinburgh, UK
+* __Ph.D.__   Urban air quality and human exposure assessment ([*Thesis*](../pdf/PhDThesis_HW_final.pdf)), University of Edinburgh, UK
 * __BSc (Hons)__     Environmental and Sustainable Chemistry (1^st^ Class), Unversity of Edinburgh, UK
 * __BSc__     Applied Chemistry, South China University of Technology, China
 
