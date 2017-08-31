@@ -6,6 +6,7 @@ categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
 showthedate: true
 enablecomments: true
+series: ["example"]
 ---
 
 ```{r setup, include=FALSE}
