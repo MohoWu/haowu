@@ -7,6 +7,9 @@ googleAnalytics = "UA-105636148-1"
 
 title = "Hao"
 
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
 [params]
   disqusShortname = "haowu"
   description = "Welcome to my website."
