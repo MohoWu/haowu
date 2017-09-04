@@ -35,12 +35,12 @@
         </ul>
 	{{end}} 
 	
-</div>
-</div> 
-
-      {{ if and (.Site.Params.disqusShortname) (not .Params.disableComments) }}
+	   {{ if and (.Site.Params.disqusShortname) (not .Params.disableComments) }}
 				<h2>Comments</h2>
 				 {{ template "_internal/disqus.html" . }}
 			{{ end }}
-		</div>
+	
+</div>
+</div> 
+</div>
 {{ partial "foot.html" . }}
