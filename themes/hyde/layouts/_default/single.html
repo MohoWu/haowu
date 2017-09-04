@@ -5,15 +5,14 @@
   <div class="content container">
     <div class="post">
       <h1>{{ .Title }}</h1>
-      {{ if .Params.showthedate }}
+      {{ if not .Params.hideDate }}
           <span class="post-date">{{ .Date.Format "Mon, 2 Jan, 2006" }}</span>
             {{ end }}
       {{ .Content }}
     </div>
 
-			{{ if and (.Site.Params.disqusShortname) (.Params.enablecomments) }}
-				<h2>Comments</h2>
-				{{ partial "disqus" . }}
-			{{ end }}
+      {{ if (not (eq .Site.DisqusShortname "")) | and (not .Params.disableComments) }}
+			    {{ template "_internal/disqus.html" . }}
+		        {{ end }}
 		</div>
 {{ partial "foot.html" . }}
