@@ -11,8 +11,8 @@
       {{ .Content }}
     </div>
 
-      {{ if (not (eq .Site.DisqusShortname "")) | and (not .Params.disableComments) }}
-			    {{ template "_internal/disqus.html" . }}
+      {{ if and (.Site.Params.disqusShortname) (not .Params.disableComments) }}
+			    {{ partial "disqus" . }}
 		        {{ end }}
 		</div>
 {{ partial "foot.html" . }}

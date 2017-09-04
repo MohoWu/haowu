@@ -38,9 +38,9 @@
 </div>
 </div> 
 
-{{ if and (.Site.Params.disqusShortname) (.Params.enablecomments) }}
+      {{ if and (.Site.Params.disqusShortname) (not .Params.disableComments) }}
 				<h2>Comments</h2>
-				{{ partial "disqus" . }}
+				 {{ template "_internal/disqus.html" . }}
 			{{ end }}
 		</div>
 {{ partial "foot.html" . }}
