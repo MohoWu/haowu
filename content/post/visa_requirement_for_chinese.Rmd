@@ -6,9 +6,6 @@ categories: ["R"]
 tags: ["R", "Web Scraping", "leaflet"]
 series: ["Tutorial"]
 slug: "visa4chinese"
-output:
-  html_document:
-    highlight: tango
 ---
 
 This is my first blog and a tutorial on how to use R to do some simple web scraping and mapping.
