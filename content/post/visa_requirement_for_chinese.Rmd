@@ -42,10 +42,10 @@ library(rworldmap)
 Most of the webpages we visit everyday are essentially HTML documents. HTML is short for **HyperText Markup Language**, which, as I understand, is no different to plain text file with a lot tags surrounding the text to tell the browser how it is shown to the user. Therefore it is entirely possible for us to extact only the meaningful text and get rid of the markups if we can figure out the pattern of tags surrounding the text. If you are using Chrome you can inpect the code behind an element of a web page if you right click on the element and click *Inspect*.
 
 See how I can highlight the table I want to scrap when I place my mouse on the corresponding code.
-![](../../static/image/inspect.png)
+![](image/inspect.png)
 
 Now you want to right click on the HTML code and *Copy Xpath*.
-![](../../static/image/copyXpath.png)
+![](image/copyXpath.png)
 
 
 **That's it!** That's all you need to do locate data and the rest will be done with the `rvest` package.
@@ -75,7 +75,7 @@ visa_dat <- mapply(c, visa_country, visa_ter, visa_china) %>%
 # add an entry for China
 visa_dat[NROW(visa_dat) + 1,] <- c("China", "Visa not required", "")
 
-head(visa_dat)
+knitr::kable(head(visa_dat))
 
     
 ```
@@ -134,7 +134,7 @@ I use `leaflet` to plot the choropleth map here. I learnt it from [RStudio Leafl
 pal <- colorFactor(c("#FF0000", "#FF7F50", "#FFD700", "#00FF00"),
                    countries@data$difficulty)
 
-leaflet(countries) %>%
+leaflet(countries, width = 900, height = 600) %>%
     setView(0, 0, 2) %>%
     addProviderTiles(providers$CartoDB.Positron) %>%
     addPolygons(popup = paste0("<strong>", countries@data$visa_req, "</strong>", "<br>",
