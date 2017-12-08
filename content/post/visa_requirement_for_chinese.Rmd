@@ -6,6 +6,9 @@ categories: ["R"]
 tags: ["R", "Web Scraping", "leaflet"]
 series: ["Tutorial"]
 slug: "visa4chinese"
+output:
+  html_document:
+    highlight: tango
 ---
 
 This is my first blog and a tutorial on how to use R to do some simple web scraping and mapping.
@@ -82,7 +85,7 @@ knitr::kable(head(visa_dat))
 
 ## Data Cleaning
 
-Now that the web scraping part is done, we can do what we usually do with cleaning the data. For this data, we can first get rid of the ugly citation links. I'd also like to add another column to simply the visa requirement. Visa not required means no hassle at all. Anything with e-visa or visa on arrival should not be a major headache either. The country that requires a visa and is not conditional if you hold a visa of another country requires the most effort in preparation. 
+Now that the web scraping part is done, we can do what we usually do with cleaning the data. For this data, we can first get rid of the ugly citation links. I'd also like to add another column to simplify the visa requirement. Visa not required means no hassle at all. Anything with e-visa or visa on arrival should not be a major headache either. The country that requires a visa and is not conditional if you hold a visa from another country requires the most effort in preparation. 
 
 ```{r cleaning}
 regions <- c("South Atlantic and Antarctica", "South America", "Oceania", 
@@ -112,7 +115,7 @@ Now we can get into the interesting part of the analysis -- where exactly can I 
 
 First we still need to get the shapefile with all the countries as the basis of the map. We can use the `rworldmap` package to get a world map easily.
 
-```{r load in world polygon}
+```{r load in world polygon, results=FALSE}
 
 data("countryExData",envir=environment(),package="rworldmap")
 countryExData<-get("countryExData")
@@ -126,7 +129,7 @@ countries <- sp::merge(countries, visa_dat_clean,
 
 ```
 
-I use `leaflet` to plot the choropleth map here. I learnt it from [RStudio Leaflet for R](https://rstudio.github.io/leaflet/choropleths.html) website.
+I use `leaflet` here to plot the choropleth map. I learnt it from [RStudio Leaflet for R](https://rstudio.github.io/leaflet/choropleths.html) website.
 
 
 ```{r plot leaflet}
