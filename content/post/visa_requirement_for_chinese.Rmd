@@ -10,9 +10,9 @@ slug: "visa4chinese"
 
 This is my first blog and a tutorial on how to use R to do some simple web scraping and mapping.
 
-It's holiday season now and I was scouting where I could go for a short holiday around Christmas and New Year. I live in the UK and to many Britons this means searching on the Ryanair website and find some place warmer. I wish I could do the same but as a Chinese citizen, I'm not only limited by the thickness of my wallet but also by my Chinese passport. Things have improved over the past few years, but it's still not pack-and-go for us to visit the majority of developed countries. 
+It's holiday season now and I was scouting where I could go for a short break around Christmas and New Year. I live in the UK and to many Britons this means searching on the Ryanair website and find some place warmer. I wish I could do the same but as a Chinese citizen, I'm not only limited by the thickness of my wallet but also by my Chinese passport. Things have improved over the past few years, but it's still not pack-and-go for us to visit the majority of developed countries. 
 
-Conviniently, there's a [Wikipedia page](https://en.wikipedia.org/wiki/Visa_requirements_for_Chinese_citizens) listing the visa requirements for Chinese citizens for all the countries in the world. It also has a map with countries colour coded with different visa requirements. It looks fine, but who doesn't like a interactive map where you can zoom in/out and get more info about the requirement when you click on the country. So my goal is to plot an interactive world map which shows the countries where I can pack and go at a glance and also provides more infomation for the countries I want to explore in the future.
+Conveniently, there's a [Wikipedia page](https://en.wikipedia.org/wiki/Visa_requirements_for_Chinese_citizens) listing the visa requirements for Chinese citizens for all the countries in the world. It also has a map with countries colour coded with different visa requirements. It looks fine, but who doesn't like a interactive map where you can zoom in/out and get more info about the requirement when you click on the country. So my goal is to plot an interactive world map which shows the countries where I can pack and go at a glance and also provides more infomation for the countries I want to explore in the future.
 
 ## Setup
 
@@ -102,6 +102,10 @@ visa_dat_clean <-
                      ignore.case = TRUE) ~ "little hassle",
                grepl("visa required|permit required|pass required|authorisation required|restricted", visa_req, ignore.case = TRUE) & notes == "" ~ "great hassle",
                TRUE ~ "maybe a hassle"
+           ),
+           country = case_when(
+             country == "Czech Republic" ~ "Czech Rep.",
+             TRUE ~ country
            ))
 
 ```
