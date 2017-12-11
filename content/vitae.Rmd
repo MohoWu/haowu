@@ -3,7 +3,7 @@ title: "Curriculum Vitae - Hao Wu"
 bibliography: ../static/bib/vitae.bib
 csl: ../static/bib/elsevier-harvard-with-url.csl
 nocite: |
-  @wu2017, @kenagy2016, @wu2015, @steinle2015, @reis2014
+  @wu2017, @kenagy2016, @wu2015, @steinle2015, @lin2017
 disableComments: true
 hideDate: true
 ---

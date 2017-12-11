@@ -9,4 +9,4 @@ My [thesis](pdf/PhDThesis_HW_final.pdf) was _Assessing urban air quality through
 
 I love to use programming to explore and visualise data. [RStudio](https://www.rstudio.com/) is the primary software I use to analyse data and to communicate with others. This website is built entirely in RStudio using the [`blogdown`](https://bookdown.org/yihui/blogdown/) package.
 
-In my spare time I'm interested in photography (or at least learning about all the latest photography gears). I also enjoy cooking for myself and friends (although not on every single day).
+In my spare time I'm interested in photography and cooking.
