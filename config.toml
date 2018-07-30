@@ -21,7 +21,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   filename = "sitemap.xml"
 
 [params]
-  favicon = "/image/moho4.png"
+  favicon = "/image/favicon.ico"
   description = ""
   facebook = ""
   twitter = "https://twitter.com/WuMoho"
