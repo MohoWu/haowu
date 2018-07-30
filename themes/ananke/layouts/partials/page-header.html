@@ -14,13 +14,17 @@
         {{ end }}
       </div>
     </div>
+    <link rel="stylesheet" href="{{"dist/css/github-gist.css" | absURL}}" rel="stylesheet" id="theme-stylesheet">
+    <script src="{{ "dist/js/highlight.pack.js" | absURL }}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </header>
 {{ else }}
   <header>
     <div class="{{ .Site.Params.background_color_class | default "bg-black" }}">
       {{ partial "site-navigation.html" . }}
     </div>
+    <link rel="stylesheet" href="{{"dist/css/github-gist.css" | absURL}}" rel="stylesheet" id="theme-stylesheet">
+    <script src="{{ "dist/js/highlight.pack.js" | absURL }}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </header>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 {{ end }}
