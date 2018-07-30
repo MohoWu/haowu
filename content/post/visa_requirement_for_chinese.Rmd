@@ -6,6 +6,7 @@ categories: ["R"]
 tags: ["R", "Web Scraping", "leaflet"]
 series: ["Tutorial"]
 slug: "visa4chinese"
+featured_image: "/image/Chinese_passport.jpg"
 ---
 
 This is my first blog and a tutorial on how to use R to do some simple web scraping and mapping.
@@ -42,10 +43,10 @@ library(rworldmap)
 Most of the webpages we visit everyday are essentially HTML documents. HTML is short for **HyperText Markup Language**, which, as I understand, is no different to plain text file with a lot tags surrounding the text to tell the browser how it is shown to the user. Therefore it is entirely possible for us to extact only the meaningful text and get rid of the markups if we can figure out the pattern of tags surrounding the text. If you are using Chrome you can inpect the code behind an element of a web page if you right click on the element and click *Inspect*.
 
 See how I can highlight the table I want to scrap when I place my mouse on the corresponding code.
-![](image/inspect.png)
+![](/image/inspect.png)
 
 Now you want to right click on the HTML code and *Copy Xpath*.
-![](image/copyXpath.png)
+![](/image/copyXpath.png)
 
 
 **That's it!** That's all you need to do locate data and the rest will be done with the `rvest` package.
@@ -73,7 +74,7 @@ visa_dat <- mapply(c, visa_country, visa_ter, visa_china) %>%
     as.data.frame() %>%
     mutate_if(is.factor, as.character)
 # add an entry for China
-visa_dat[NROW(visa_dat) + 1,] <- c("China", "Visa not required", "")
+visa_dat[NROW(visa_dat) + 1,] <- c("China", "Visa not required", "", "")
 
 knitr::kable(head(visa_dat))
 
@@ -89,7 +90,7 @@ regions <- c("South Atlantic and Antarctica", "South America", "Oceania",
              "Caribbean and North Atlantic", "Asia", "Africa", "Europe")
 visa_dat_clean <- 
     visa_dat %>% 
-    setNames(c("country", "visa_req", "notes")) %>%
+    setNames(c("country", "visa_req", "allow_stay","notes")) %>%
     filter(!country %in% c("Visitor to", regions)) %>%
     group_by(country) %>%
     summarise(visa_req = paste(visa_req, collapse = ";"),

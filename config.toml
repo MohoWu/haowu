@@ -1,51 +1,67 @@
-theme = "hyde"
-baseURL = "https://haowu.netlify.com/"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+title = "Moho"
+baseURL = "https://moho.netlify.com/"
 languageCode = "en-us"
+theme = "gohugo-theme-ananke"
+
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
 enableEmoji = true
 googleAnalytics = "UA-105636148-1"
-
-title = "Hao"
+enableRobotsTXT = true
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
 [params]
-  disqusShortname = "haowu"
+  favicon = ""
   description = ""
+  facebook = ""
   twitter = "https://twitter.com/WuMoho"
   github = "https://github.com/mohowu"
-  copyright = "Powered by [Hugo](http://gohugo.io) <br/> &copy; 2017 [Hao Wu](https://haowu.netlify.com). All rights reserved."
+  instagram = "https://www.instagram.com/moho_wu/"
+  youtube = ""
+  linkedin = ""
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-black"
+  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
+  recent_posts_number = 2
+  disqusShortname = "haowu"
   mainImage = "/image/moho4.png"
   pygmentsUseClassic = true
   
-
 [Taxonomies]
 	tag = "tags"
 	series = "series"
 	series-desc = "series-desc"
 	category = "categories"
-
-[[menu.main]]
-  name = "Blog"
-  url = "/post/"
-  weight = 1
-[[menu.main]]
-  name = "About"
-  url = "/about/"
-  weight = 2
-[[menu.main]]
-  name = "CV"
-  url = "/vitae/"
-  weight = 3
-[[menu.main]]
-  name = "Categories"
-  url = "/categories/"
-  weight = 4
-[[menu.main]]
-  name = "Tags"
-  url = "/tags/"
-  weight = 5
-
-
-  
+	
+	
+	
+#[[menu.main]]
+#  name = "Blog"
+#  url = "/post/"
+#  weight = 1
+#[[menu.main]]
+#  name = "About"
+#  url = "/about/"
+#  weight = 2
+#[[menu.main]]
+#  name = "CV"
+#  url = "/vitae/"
+#  weight = 3
+#[[menu.main]]
+#  name = "Categories"
+#  url = "/categories/"
+#  weight = 4
+#[[menu.main]]
+#  name = "Tags"
+#  url = "/tags/"
+#  weight = 5#
