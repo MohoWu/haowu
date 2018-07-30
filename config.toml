@@ -33,7 +33,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   background_color_class = "bg-black"
   featured_image = "/images/gohugo-default-sample-hero-image.jpg"
   recent_posts_number = 2
-  disqusShortname = "haowu"
+  disqusShortname = "moho"
   mainImage = "/image/moho4.png"
   pygmentsUseClassic = true
   
