@@ -1,67 +1,38 @@
-title = "Moho"
+DefaultContentLanguage = "en"
+MetaDataFormat = "yaml"
+Paginate = 3
+SectionPagesMenu = "main"
 baseURL = "https://moho.netlify.com/"
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = "UA-105636148-1"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 languageCode = "en-us"
 theme = "ananke"
-
-MetaDataFormat = "yaml"
-DefaultContentLanguage = "en"
-SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
-enableEmoji = true
-googleAnalytics = "UA-105636148-1"
-enableRobotsTXT = true
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-
-[permalinks]
-    post = "/:year/:month/:day/:slug/"
-
-[sitemap]
-  changefreq = "monthly"
-  priority = 0.5
-  filename = "sitemap.xml"
-
-[params]
-  favicon = "/image/favicon.ico"
-  description = ""
-  facebook = ""
-  twitter = "https://twitter.com/WuMoho"
-  github = "https://github.com/mohowu"
-  instagram = "https://www.instagram.com/moho_wu/"
-  youtube = ""
-  linkedin = ""
-  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
-  background_color_class = "bg-black"
-  featured_image = "/image/ist_pano.JPG"
-  recent_posts_number = 2
-  disqusShortname = "haowu"
-  mainImage = "/image/moho4.png"
-  pygmentsUseClassic = true
-  
+title = "Moho"
 [Taxonomies]
-	tag = "tags"
-	series = "series"
-	series-desc = "series-desc"
-	category = "categories"
-	
-	
-	
-#[[menu.main]]
-#  name = "Blog"
-#  url = "/post/"
-#  weight = 1
-#[[menu.main]]
-#  name = "About"
-#  url = "/about/"
-#  weight = 2
-#[[menu.main]]
-#  name = "CV"
-#  url = "/vitae/"
-#  weight = 3
-#[[menu.main]]
-#  name = "Categories"
-#  url = "/categories/"
-#  weight = 4
-#[[menu.main]]
-#  name = "Tags"
-#  url = "/tags/"
-#  weight = 5#
+category = "categories"
+series = "series"
+series-desc = "series-desc"
+tag = "tags"
+[params]
+background_color_class = "bg-black"
+description = ""
+disqusShortname = "haowu"
+facebook = ""
+favicon = "/image/favicon.ico"
+featured_image = "/image/ist_pano.JPG"
+github = "https://github.com/mohowu"
+instagram = "https://www.instagram.com/moho_wu/"
+linkedin = ""
+mainImage = "/image/moho4.png"
+pygmentsUseClassic = true
+recent_posts_number = 2
+twitter = "https://twitter.com/WuMoho"
+youtube = ""
+[permalinks]
+post = "/:year/:month/:day/:slug/"
+[sitemap]
+changefreq = "monthly"
+filename = "sitemap.xml"
+priority = 0.5
