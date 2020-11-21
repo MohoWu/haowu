@@ -6,10 +6,9 @@ disableComments: true
 hideDate: true
 
 ---
-Hello, I'm Hao Wu (武昊) and welcome to my website. I'm a data scientist working at [Ricardo Energy & Environment](https://ee.ricardo.com/). I obtained my PhD on [air quality](pdf/PhDThesis_HW_final.pdf) from the School of Chemistry, University of Edinburgh.
 
-I use [R](https://www.r-project.org/) to explore and visualise data. The [source code](https://github.com/MohoWu/haowu) for this website are prepared with the [`blogdown`](https://bookdown.org/yihui/blogdown/) package. The website is built and hosted on [netlify](https://www.netlify.com/).
+Hello, I'm Moho and welcome to my website. I'm a data scientist by profession and a hobbyist woodworker. I keep this blog to document my personal projects (DIY, woodworking and programming). Hopefully this can help and inspire others as well.
 
-In my spare time I enjoy travelling, photography, videography and eating local food.
+When it comes to coding, [R](https://www.r-project.org/) is always my first tool of choice. If you are interested, this website ([source code](https://github.com/MohoWu/haowu)) is made using the R package [`blogdown`](https://bookdown.org/yihui/blogdown/) and hosted on [netlify](https://www.netlify.com/).
 
-You can find me on [GitHub](https://github.com/mohowu/) or [Twitter](http://twitter.com/wumoho).
+You can find me on [GitHub](https://github.com/mohowu/) or [Twitter](http://twitter.com/wumoho). 
